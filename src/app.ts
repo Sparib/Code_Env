@@ -55,12 +55,12 @@ onEvent("shapesButton", "click", function() {
 });
 
 function randomColor():Number {
-    return rgba(Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), 0.5);
+    return rgb(Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), 0.5);
 }
 
 // DO NOT IMPORT PAST HERE
 
-function rgba(r:Number, g:Number, b:Number, a:Number):Number {
+function rgb(r:Number, g:Number, b:Number, a:Number):Number {
     return 0;
 }
 
