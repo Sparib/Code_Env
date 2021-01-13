@@ -1,5 +1,6 @@
 /*
     This was written in TypeScript and compiled to ESC5 beause writing in ESC5 is impossible
+    The git repo is at https://www.github.com/Sparib/Code_Env
 */
 // List of icons to randomly choose between
 var iconsList = ["icon://fa-heart", 
@@ -28,6 +29,8 @@ onEvent("colorsButton", "click", function() {
         setProperty("icon"+i, "icon-color", randomColor());
     }
     setProperty("homeScreen", "background-color", randomColor());
+    stopSound();
+    playSound("sound://category_bell/choose_background.mp3");
 });
 
 onEvent("locationsButton", "click", function() {
@@ -38,6 +41,8 @@ onEvent("locationsButton", "click", function() {
         setProperty("icon"+i, "width", size);
         setProperty("icon"+i, "height", size);
     }
+    stopSound();
+    playSound("sound://category_bell/choose_background.mp3");
 });
 
 onEvent("shapesButton", "click", function() {
@@ -45,6 +50,8 @@ onEvent("shapesButton", "click", function() {
     for (let i = 0; i < 20; i++) {
         setProperty("icon"+i, "image", icon);
     }
+    stopSound();
+    playSound("sound://category_bell/choose_background.mp3");
 });
 
 function randomColor():Number {
@@ -66,6 +73,10 @@ function setText(id:String, value:String) {
 }
 
 function onEvent(id:String, event:String, callback:CallableFunction) {
+    return;
+}
+
+function stopSound() {
     return;
 }
 
