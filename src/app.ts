@@ -14,7 +14,7 @@ var iconsList = ["icon://fa-heart",
 
 var icon:String = iconsList[Math.floor(Math.random() * 8)];
 for (let i = 0; i < 20; i++) {
-    let size:Number = Math.floor(Math.random() * 50) + 50;
+    let size:Number = Math.floor(Math.random() * 200) + 50;
     setProperty("icon"+i, "image", icon);
     setProperty("icon"+i, "x", Math.floor(Math.random() * 414));
     setProperty("icon"+i, "y", Math.floor(Math.random() * 320));
@@ -35,7 +35,7 @@ onEvent("colorsButton", "click", function() {
 
 onEvent("locationsButton", "click", function() {
     for (let i = 0; i < 20; i++) {
-        let size:Number = Math.floor(Math.random() * 40) + 10;
+        let size:Number = Math.floor(Math.random() * 200) + 50;
         setProperty("icon"+i, "x", Math.floor(Math.random() * 414));
         setProperty("icon"+i, "y", Math.floor(Math.random() * 320));
         setProperty("icon"+i, "width", size);
