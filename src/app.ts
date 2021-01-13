@@ -14,7 +14,7 @@ var iconsList = ["icon://fa-heart",
 
 var icon:String = iconsList[Math.floor(Math.random() * 8)];
 for (let i = 0; i < 20; i++) {
-    let size:Number = Math.floor(Math.random() * 40) + 10;
+    let size:Number = Math.floor(Math.random() * 50) + 50;
     setProperty("icon"+i, "image", icon);
     setProperty("icon"+i, "x", Math.floor(Math.random() * 414));
     setProperty("icon"+i, "y", Math.floor(Math.random() * 320));
@@ -55,12 +55,12 @@ onEvent("shapesButton", "click", function() {
 });
 
 function randomColor():Number {
-    return rgb(Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255));
+    return rgba(Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), 0.5);
 }
 
 // DO NOT IMPORT PAST HERE
 
-function rgb(r:Number, g:Number, b:Number):Number {
+function rgba(r:Number, g:Number, b:Number, a:Number):Number {
     return 0;
 }
 
