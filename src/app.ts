@@ -16,8 +16,8 @@ var icon:String = iconsList[Math.floor(Math.random() * 8)];
 for (let i = 0; i < 20; i++) {
     let size:Number = Math.floor(Math.random() * 200) + 50;
     setProperty("icon"+i, "image", icon);
-    setProperty("icon"+i, "x", Math.floor(Math.random() * 414));
-    setProperty("icon"+i, "y", Math.floor(Math.random() * 320));
+    setProperty("icon"+i, "x", Math.floor(Math.random() * 320));
+    setProperty("icon"+i, "y", Math.floor(Math.random() * 410));
     setProperty("icon"+i, "width", size);
     setProperty("icon"+i, "height", size);
     setProperty("icon"+i, "icon-color", randomColor());
@@ -36,8 +36,8 @@ onEvent("colorsButton", "click", function() {
 onEvent("locationsButton", "click", function() {
     for (let i = 0; i < 20; i++) {
         let size:Number = Math.floor(Math.random() * 200) + 50;
-        setProperty("icon"+i, "x", Math.floor(Math.random() * 414));
-        setProperty("icon"+i, "y", Math.floor(Math.random() * 320));
+        setProperty("icon"+i, "x", Math.floor(Math.random() * 320));
+        setProperty("icon"+i, "y", Math.floor(Math.random() * 410));
         setProperty("icon"+i, "width", size);
         setProperty("icon"+i, "height", size);
     }
